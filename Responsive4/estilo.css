@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAF582;
+    font-family: 'Roboto', sans-serif;
+    color:lightgoldenrodyellow;
+    font-size: 1.5em;
+}
+
+h1{
+    color: #e75480;
+    text-align: center;
+}
+
+.css h1{
+    -webkit-text-stroke: 1px whitesmoke;
+}
+.css .text p{
+    color:whitesmoke;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    background-color: teal;
+    border-top:3px solid darkred;
+    border-bottom:3px solid darkred;
+    width: 90%;
+    margin: auto;    
+}
+nav div{
+    margin:5px;
+}
+.RWD{
+    grid-column-end: span 2;
+}
+.boton a{
+    text-decoration:underline #FAF582;
+    color:#e75480;
+    font-weight: bolder;
+    text-align: center;
+}
+.container{
+    display: grid;
+    justify-items: center;
+}
+.bloque{
+    border-top:5px solid darkred;
+    border-bottom:5px solid darkred;
+    border-radius: 10px;
+    margin:10px;
+    background-color:teal;
+    position: relative;
+}
+
+.css{
+    background-color: #003A61;
+}
+
+.text p{
+    text-align: justify;
+    margin:20px;
+}
+.css .text p{
+    margin-bottom:40px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+.imagen img{
+    width:80%;
+    border:3px solid darkred;
+    border-radius: 5px;
+}
+.css img{
+    border-radius:50%;
+}
+.readMore{
+    position: absolute;
+    bottom:0;
+    margin:10px;
+}
+.readMore a{
+    color:yellow;
+    text-decoration: none;
+}
+
+.cabecera{
+    background-color: #e75480;
+    width:100%;
+    margin:0;
+    padding:10px;
+    font-weight:bolder;
+    height:40px;
+}
+
+strong{
+    font-weight: bold;
+    color:white;
+}
+
+footer{
+    display: grid;
+    justify-items: center;
+    background-color:teal;
+    color:#e75480;
+    font-weight: bolder;
+}
+footer p{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:700px){
+    .botones{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:1000px){
+    .botones{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .RWD{
+        grid-column-end: span 1;
+    }
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .cicle {
+        order:1;
+    }
+    .css{
+        order:2;
+    }
+    .float{
+        order:3;
+    }
+    .flex{
+        order:4;
+    }
+    .grid{
+        order:5;
+    }
+    .responsive{
+        order:6;
+    }
+}
+
+
+
+

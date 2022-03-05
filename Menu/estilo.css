@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(./image/fondo.png);
+    background-size: cover;
+}
+
+li:first-child{
+    padding-top:2vw;
+}
+li{
+    color:whitesmoke;
+    font-family: Karla;
+    font-weight: bold;
+    width: 200px;
+    height:100px;
+    font-size:20px;
+    display:block;
+    padding-top:2vw;
+    background-color: crimson;
+   
+}
+nav{
+    height: 100px;
+    background-color:crimson;
+    
+    
+}
+.principal{
+    list-style:none;
+    float:left;
+    padding:2vw;
+    position:relative;
+    
+}
+a{
+    text-decoration: none;
+    color:whitesmoke;
+    text-align: center;
+    
+}
+main{
+    clear:both;
+    color:whitesmoke;
+    text-align: center;
+}
+
+h1{
+    margin-top: 20vh;
+    font-size:5vw;
+    font-family: Calistoga;
+}
+div{
+    font-family: Karla;
+    font-weight: bold;
+    font-size:2vw;
+    margin:2vw;
+    
+}
+
+li:hover{
+    display: block;
+    background-color:#2E0404;
+}
+
+.emociones:hover .alegria{
+    display: block;
+}
+.sentimientos:hover .sent2{
+    display:block;
+}
+.positivo:hover .listaPositivo{
+    display:block;
+}
+.neutro:hover .listaNeutro{
+    display:block;
+}
+.negativo:hover .listaNegativo{
+    display:block;
+}
+.simple:hover .listaSimple{
+    display:block;
+}
+.complejo:hover .listaComplejo{
+    display:block;
+}
+.sent2{
+    position:relative;
+    left:3px;
+    display:none;
+
+}
+
+.alegria{
+    position:relative;
+    right:38px;
+    top:39px;
+    display:none;
+
+}
+
+.positivo{
+    position:relative;
+    right:40px;
+    top:39px;
+    
+    
+}
+.listaPositivo{
+    position:relative;
+    left:201px;
+    top:-58px;
+    display:none;
+}
+.neutro{
+    position:relative;
+    right:40px;
+    top:32px;
+}
+.listaNeutro{
+    position:relative;
+    left:201px;
+    top:-60px;
+    display:none;
+    
+}
+.negativo{
+    position:relative;
+    right:40px;
+    top:32px;
+    
+
+}
+.listaNegativo{
+    position:relative;
+    left:201px;
+    top:-75px;
+    display:none;
+    
+}
+.simple{
+    position:relative;
+    top:15px;
+    
+    
+}
+
+.listaSimple{
+    position:relative;
+    left:201px;
+    top:-60px;
+    display:none;
+    
+    
+}
+
+.listaComplejo{
+    position:relative;
+    left:201px;
+    top:-46px;
+    display:none;
+}

@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:1.5vw;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: #000000;
+    background-color: #000000;
+    background-color: #150a25;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233c5561' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.container{
+    margin:10vw;
+    margin-top:13vw;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns:2fr repeat(6,1fr);
+    grid-template-rows:repeat(8,1fr);
+}
+.container div{
+    border:1.5px solid white;
+}
+.dia{
+    color:whitesmoke;
+    background-color:#1C110A ;
+}
+.asignatura{
+    
+}
+.c1{
+    grid-column-start:2 ;
+}
+.horas{
+    color:whitesmoke;
+    background-color:#1C110A;
+    grid-area: 2/1/8/1;
+}
+
+p{
+    text-align: center;
+}
+.DAW{
+    background-color: #89483A;
+}
+.DIW{
+    background-color: #50A2A7;
+}
+.DWEC{
+    background-color: #9B2915;
+}
+.EIEM{
+    background-color:#E4D6A7;
+}
+.DWES{
+    background-color:#E9B44C;
+}
+
+.c15{
+    grid-row: 2/span 2;
+}
+.c16{
+    grid-column: 3/span 2;
+    grid-row:2/ span 2;
+}
+.c17{
+    grid-column:5;
+}
+.c18{
+    grid-column:6;
+    grid-row:2/span 2;
+} 
+.c19{
+    grid-row:4/span 2;
+}
+.c20{
+    grid-row:4/span 2;
+}
+.c21{
+    grid-column:4;
+}
+.c22{
+    grid-column:5;
+    grid-row:3/span 2;
+}
+.c23{
+    grid-column:6;
+    grid-row:4;
+}
+.c24{
+    grid-column:2;
+    grid-row:6/span 2;
+}
+.c25{
+    grid-column: 3;
+    grid-row:6/span 2;
+}
+.c26{
+    grid-row:5/span 2;
+}
+.c27{
+    grid-column:5/span 2;
+}
+.c28{
+    grid-row:7;
+    grid-column:4;
+}
+.c29{
+    grid-row:6;
+    grid-column:5;
+} 
+.c30{
+    grid-column:6;
+}
+.c31{
+    grid-column:5;
+}
+.c15{
+    grid-column-start:2;
+}
+.c33{
+    text-align: center;
+    background-color: #1C110A;
+    color:whitesmoke;
+    grid-column-start:1;
+    grid-column-end:span 6; 
+}

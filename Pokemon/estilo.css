@@ -1,0 +1,234 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --darkBlueGradient:rgb(11,19,43)radial-gradient(circle, rgba(11,19,43,1) 0%, rgba(91,192,190,1) 100%);
+    --colorBoton: rgb(2,0,36)linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,106,117,1) 39%, rgba(0,212,255,1) 100%);
+}
+
+body{
+    background-color: #3a506b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234b8895' fill-opacity='0.4'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-family: 'Courgette', cursive;
+    color:#6FFFE9;
+    text-align: center;
+    font-size:1.3vw;
+}
+h1:nth-of-type(2){
+    margin-bottom: 2vw;
+}
+main{
+    color:#2B220B;
+    width:70%;
+    margin:auto;
+    background-color: rgba(183,127,127,0.3);
+}
+.container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: minmax(50px,1fr);
+    
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.tarjeta{
+    margin:0.5vw;
+    position: relative;
+}
+
+.front, .back{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+.giro{
+    transform: rotateY(180deg);
+}
+.interior{
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d;
+    transition: transform 0.5s linear;
+}
+
+.boton{
+    border:1px solid whitesmoke;
+    border-radius: 10px;
+    margin:0.4vw;
+    width: 95%;
+    height:4vw;
+    position: absolute;
+    bottom:0;
+    cursor: pointer;
+    background-color:#42ACC2;
+    opacity: 0;
+    transition:all;
+    transition-duration:1s;
+}
+.boton::after{
+    border-radius: 10px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index:3;
+    background-color:#C27869;
+    transform-origin: right;
+}
+.back p{
+    width: 80%;
+    border-radius: 10px;
+    padding:0.5vw;
+    text-align: center;
+    background-color: rgba(245,245,245,0.5);
+    font-size: 1.5vw;
+    align-self: center;
+}
+.boton p{
+    width:60%;
+    text-align: center; 
+    margin:auto;
+    padding:0.5vw;
+    font-family: 'Courgette', cursive;
+    font-size:2vw;
+    -webkit-text-stroke: 1px lightseagreen;
+    position:relative;
+    top:0%;
+    
+}
+.small{
+    position: relative;
+    height:15vw;
+}
+.front:hover .boton{
+    opacity: 1; 
+}
+
+.front:hover .boton::after{
+    animation: colorFondo 1s 0.5s;
+    animation-fill-mode: forwards;
+}
+.front:hover .boton{
+    animation:border 2s ease;
+    animation-delay:1s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorFondo{
+    100%{width:0;}
+    0%{width: 100%;}
+}
+@keyframes border{
+    0%{box-shadow:none;}
+    50%{box-shadow: 0px 0px 10px 5px whitesmoke;}
+}
+
+.small img{
+   margin-top:1vw;
+}
+.big .boton{
+    margin-left: 0.7vw;
+}
+.tarjetaRayquaza{
+    position: relative;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+.tarjetaShaymin{
+    position:relative;
+    grid-column-end: span 2;
+}
+.tarjetaDarkrai{
+    position:relative;
+    grid-column-end: span 2;
+}
+.articunoCont{
+    background: url(./images/articuno.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.infernapeCont{
+    background: url(./images/infernape.png),var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.rayquazaCont{
+    background: url(./images/rayquaza.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.treeckoCont{
+    background: url(./images/treecko.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.lucarioCont{
+    background: url(./images/lucario.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.shayminCont{
+    background: url(./images/shaymin.png);
+    background-position: center;
+    background-size: cover;
+}
+.eveeCont{
+    background: url(./images/eevee.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.luxrayCont{
+    background: url(./images/luxray.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.totodileCont{
+    background: url(./images/totodile.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.mimikyuCont{
+    background: url(./images/mimikyu.png), var(--darkBlueGradient);
+    background-position: center;
+    background-size: cover;
+}
+.darkraiCont{
+    background: url(./images/darkrai.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.back{
+    background-image: url(./images/pokeball.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tarjetaShaymin .back{
+    background-image: url(./images/pokeball2.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.tarjetaDarkrai .back{
+    background-image: url(./images/pokeball2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+}

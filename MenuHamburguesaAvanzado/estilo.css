@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(./burger.jpg);
+    font-family:exo;
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    
+}
+
+h1{
+    font-family: Lacquer;
+    font-size:3vw;
+    color:whitesmoke;
+    position:absolute;
+    left:43vw;
+}
+
+.padre{
+    background-color:#A4DBB1;
+    width:20vw;
+    height:100vh;
+    position:relative;
+    bottom:13vh;
+    float:left;
+    right:20vw;
+    transition:all 0.3s linear;
+}
+
+.menu{
+    padding-top:15vh;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    font-weight:900;
+    color:darkgreen;
+    text-decoration:underline;
+}
+
+main{
+    width:60vw;
+    height:80vh;
+    float:right;
+}
+
+main p{
+   background-color:rgba(140, 135, 135, 0.7);
+   font-size:1.2vw;
+   font-weight: bold;
+   text-align: justify;
+   border-radius:10px;
+   width:55vw;
+   height:15vw;
+   margin-top:15vh;
+   padding:2vh;
+   line-height:3.6vh;
+   position:absolute;
+   left:40vw;
+   
+}
+
+ul li{
+    margin:3vh;
+    font-size:1.3vw;
+    list-style: none;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    top:7vh;
+    left:0.5vw;
+    width:6vw;
+    height:6vh;
+    z-index: 10;
+    opacity:0;
+    cursor: pointer;
+
+}
+
+input[type="checkbox"]:checked ~ .padre{
+    transform: translate(20vw)
+    
+}
+
+
+.boton{
+    position: relative;
+    margin-top:1vh;
+    top:1vh;
+    left:2vw;
+    z-index: 1;
+    width:2.5vw;
+    height:1.8vh;
+}
+
+
+.boton span{
+    background-color:orange;
+    border-radius: 3px;
+    width:2.5vw;
+    height:0.6vh;
+    display:block;
+    z-index:5;
+    margin-top:1vh;
+    position: relative;
+    right:1.85vw;
+}
+
+#rotar{
+    position:relative;
+    width:3vw;
+    height:5vh;
+    left:2vw;
+    z-index:5;
+    
+}
+/*
+Inicio de la transicion
+Desaparicion de la segunda barra
+*/
+input[type="checkbox"]:checked ~ #rotar .boton .barra2{
+    transform-origin: left;
+    transform:rotatey(-90deg);
+    transition:all 0.5s;
+}
+/*Rotacion y posicionamiento de la tercera barra*/
+input[type="checkbox"]:checked ~ #rotar .boton .barra3{
+    transform-origin: right;
+    background-color:green;
+    transform: rotate(90deg) translate(0px,22.5px);
+    transition:all 0.4s linear 0.5s;
+}
+/*Posicionamiento de la primera barra*/
+input[type="checkbox"]:checked ~ #rotar .boton .barra1{
+    transform-origin: left;
+    background-color:green;
+    transform:translate(0px,5px);
+    transition:all 0.4s linear 0.5s;
+}
+
+/*Rotacion del contendedor de las barras*/
+input[type="checkbox"]:checked ~ #rotar{
+    transform:rotatez(-45deg);
+    transition:all 0.5s linear 1s;
+}
+
+
+/*
+Animacion del vuelta del boton
+Rotacion del contenedor de los spans
+*/
+input[type="checkbox"]:not(:checked) ~ #rotar{
+    transform:rotatez(0deg);
+    transition-duration:0.5s;
+    
+}
+/*Colocacion de la tercera barra*/
+input[type="checkbox"]:not(:checked) ~ #rotar .boton .barra3{
+    transform-origin: right;
+    background-color:orange;
+    transform: rotate(0deg);
+    transition-delay:0.5s;
+    transition-duration:0.4s;
+}
+/*Colocacion de la primera barra*/
+input[type="checkbox"]:not(:checked) ~ #rotar .boton .barra1{
+    transform-origin: left;
+    background-color:orange;
+    transition-delay:0.5s;
+    transition-duration:0.4s;
+}
+/*Aparicion de la segunda barra*/
+input[type="checkbox"]:not(:checked) ~ #rotar .boton .barra2{
+    transform-origin:left;
+    transform:rotatey(0deg);
+    transition-duration:0.5s;
+    transition-delay:0.9s;
+    
+}
+
+
+
+
+

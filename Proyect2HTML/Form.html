@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="lang" content="es-ES">
+        <meta name="author" content="Jesús.Ruiz.Rodríguez">
+        <meta name="keywords" content="vegan,letucce,tomato,cosmetics,green">
+        <title>Vegan Form</title>
+        <link rel="icon" type="image/png" href="./images/vegan.png" sizes="32x32">
+
+    </head>
+
+    <body>
+        <h1 id="header">Formulary</h1>
+        <p>
+            <form name ="shop" method="get" action="Shop.html">
+                <label for="shop">Visit our Shop!!</label>
+                <button type="submit">Shop</button>
+            </form>
+        </p>
+        <p>
+            <form name ="Table" method="get" action="Timetable.html">
+                <label for="Table">Enjoy your own Timetable:</label>
+                <button type="submit">Timetable</button>
+            </form>
+        </p>
+        <p>
+            <a href="#final">Bottom of the page</a>
+            
+        </p>
+        <fieldset>
+            <legend>Quick travel</legend>
+            <nav>
+                <p>
+                    <ul>
+                        <li><a href="#Personal">Personal Information</a></li>
+                        <li><a href="#hours">Availabe Hours</a></li>
+                        <li><a href="#Gender">Gender</a></li>
+                        <li><a href="#Documentation">Documentation</a></li>
+                        <li><a href="#send">Buttons</a></li>
+                    </ul>
+                </p>
+            </nav>
+        </fieldset>
+
+        <main id="contenido">
+            <form name="miformulario" method="post" action="form.php">
+                <h2>Enter the data</h2>
+                
+                <fieldset>
+                    <legend id="Personal">Personal Information</legend>
+                    <p> 
+                        <label for="nombre">Name:</label>
+                        <input type="text" name="nombre" id="nombre" size="15" maxlength="15" required autofocus>
+                    </p>
+                    <p>
+                        <label for="apellidos">Surnames:</label>
+                        <input type="text" name="apellidos" id="apellidos" size="40" maxlength="40" required>
+                    </p>
+                    <p>
+                        <label for="fecnac">Date of Birth:</label>
+                        <input type="date" name="fecnac" id="fecnac" value="2021-09-24">
+                    </p>
+                    <p>
+                        <label for="tlf">Phone:</label>
+                        <input type="tel" name="tlf" id="tlf" size="26" readonly placeholder="000-000-000">
+                    </p>
+                    <p>
+                        <label for="dir">Direction:</label>
+                        <input type="text" name="dir" id="dir" required>
+                    </p>
+                    <p>
+                        <label for="ciudad">City</label>
+                        <select name="ciudad" id="ciudad">
+                            
+                            <option value="" disabled selected>Select one City</option>
+
+                            <optgroup label="Andalucia">
+                                <option value="Almeria">Almeria</option>
+                                <option value="Cadiz">Cadiz</option>
+                                <option value="Cordoba">Córdoba</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Jaen">Jaén</option>
+                                <option value="Malaga">Malaga</option>
+                                <option value="Sevilla">Sevilla</option>
+                            </optgroup>
+
+                            <optgroup label="Aragon">
+                                <option value="Huesca">Huesca</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Zaragoza">Zaragoza</option>
+                            </optgroup>
+                                
+                            <optgroup label="Asturias">
+                                <option value="Asturias">Asturias</option>
+                            </optgroup>
+                                
+                            <optgroup label="Cantabria">
+                                <option value="Cantabria">Cantabria</option>
+                            </optgroup>
+                                
+                            <optgroup label="Castilla y Leon">
+                                <option value="Avila">Ávila</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="leon">León</option>
+                                <option value="palencia">Palencia</option>
+                                <option value="segovia">Segovia</option>
+                                <option value="soria">Soria</option>
+                                <option value="valladolid">Valladolid</option>
+                                <option value="zamora">Zamora</option>
+                            </optgroup>
+                                
+                            <optgroup label="Catilla la-Mancha">
+                                <option value="albacete">Albacete</option>
+                                <option value="ciudadreal">Ciudad Real</option>
+                                <option value="cuenca">Cuenca</option>
+                                <option value="Guadalajara">Guadalajara</option>
+                                <option value="Toledo">Toledo</option>
+                            </optgroup>
+                                
+                            <optgroup label="Cataluña">
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Girona">Girona</option>
+                                <option value="Lleida">Lleida</option>
+                                <option value="Tarragona">Tarragona</option>
+                            </optgroup>
+                                
+                            <optgroup label="Comunidad Valenciana">
+                                <option value="Alicante">Alicante</option>
+                                <option value="Castellón">Castellón</option>
+                                <option value="Valencia">Valencia</option>
+                            </optgroup>
+                                
+                            <optgroup label="Madrid">
+                                <option value="Madrid">Madrid</option>      
+                            </optgroup>
+                                
+                            <optgroup label="Murcia">
+                                <option value="Murcia">Murcia</option>
+                            </optgroup>
+                                
+                            <optgroup label="Navarra">
+                                <option value="Navarra">Navarra</option>
+                            </optgroup>
+                                
+                            <optgroup label="País Vasco">
+                                <option value="Alava">Alava</option>
+                                <option value="Bizkaia">Bizkaia</option>
+                                <option value="Gipuzkoa">Gipuzkoa</option>
+                            </optgroup>
+                               
+                            <optgroup label="La Rioja">
+                                <option value="LaRioja">La Rioja</option>
+                            </optgroup>
+                                
+                            <optgroup label="Ceuta">
+                                <option value="Ceuta">Ceuta</option>
+                            </optgroup>
+                                
+                            <optgroup label="Melilla">
+                                <option value="Melilla">Melilla</option>
+                            </optgroup>
+                                 
+                        </select>
+                    </p>
+                        <p>
+                            <label for="dni">DNI:</label>
+                            <input type="text" name="dni" id="dni" required size="26">
+                        </p>
+                        <p>
+                            <label for="color">Chose one color for the uniform: </label>
+                            <input type="color" name="color" id="color" value="#008f39">
+                        </p>
+                        <p>
+                            <label for="scale">Affinity with animals:</label>
+                            <input type="range" name="scale" id="scale" min="0" max="100" value="75">
+                        </p>
+                        <p>
+                            <label for="pass">Password:</label>
+                            <input type="password" name="pass" id="pass" required size="26">
+
+                            <label for="passc">Confirm your password:</label>
+                            <input type="password" name="passc" id="passc" required size="26">
+                        </p>
+                    
+                    <fieldset>
+                        <legend id ="hours">Availabe hours</legend>
+                        <p>
+                            <label for="mañana">Morning shift</label>
+                            <input type="checkbox" name="mañana" id="mañana">
+                        </p>
+                        <p>
+                            <label for="tarde">Evening shift</label>
+                            <input type="checkbox" name="tarde" id="tarde">
+                        </p>
+                        <p>
+                            <label for="noche">Night shift</label>
+                            <input type="checkbox" name="noche" id="noche">
+                        </p>
+                        
+                    </fieldset>
+                        
+                    <fieldset>
+                        <legend id ="Gender">Gender</legend>
+                        <p>
+                            <label for="genero">Man</label>
+                            <input type="radio" name="genero" id="H">
+                        </p>
+                        <p>
+                            <label for="genero">Woman</label>
+                            <input type="radio" name="genero" id="M">
+                        </p>
+                        <p>
+                            <label for="genero">Other</label>
+                            <input type="radio" name="genero" id="O" checked>
+                        </p>
+                        <p>
+                            <label for="genero">I prefer not to answer</label>
+                            <input type="radio" name="genero" id="Pnc">
+                        </p>
+                    
+                    </fieldset>
+                    <fieldset>
+                        <legend id="Documentation">Documentation</legend>
+                        <p>
+                            <label for="archivo">Upload your CV</label>
+                            <input type="file" name="archivo">
+                        </p>
+                        <p>
+                            <label for="descripcion">
+                                    Enter qualities for this job.
+                            </label>                                    
+                            
+                            <textarea id="descripcion" name="descripcion" rows="2" cols="30" spellcheck="true"></textarea>
+                        </p>
+                    </fieldset>                    
+                </fieldset>
+                    <p>
+                       <input id="final" type="reset" value="Reset Formulary" id="reset">
+                    </p>
+                    <p>
+                        <input type="submit" value="Send Data" id="send">
+                    </p>
+            </form>
+            <p>
+                
+            <a href="#header">Back to top</a></li>
+                
+            </p>
+        </main>
+
+            
+    </body>
+</html>

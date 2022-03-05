@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color:orange;
+    text-align:center;
+    height: 10vh;
+    font-size:2vw;
+    padding-top:1vh;
+}
+
+
+#primero div {
+    width: 22vw;
+    height:4vw;
+    margin:1vw;
+    border:solid black 2px;
+    background-color:greenyellow;
+    float:left;
+    
+    
+}
+#primero div p{
+    padding:1vw;
+    font-weight: bold;
+    
+}
+#primero{
+    background-color:rgb(163, 84, 216);
+    height: 26vh;
+    
+}
+
+#primero #Cinco{
+    clear:both;
+}
+
+
+#segundo div{
+    float:right;
+    border:solid whitesmoke 2px;
+    
+}
+
+
+#segundo {
+    height:65vh;
+    background-color:darkslategray;
+    padding:1vw;
+}
+#p1{
+    padding:1vw;
+    height: 75%;
+    width: 32%;
+    background-color:violet;
+    font-weight: bold;
+    margin-right: 1vw;
+    text-align: left;
+    overflow:hidden;
+    
+}
+
+#p2{
+    font-weight: bold;
+    border:solid whitesmoke 2px;
+    padding:0.5vw;
+    width:65%;
+    height:16%;
+    margin-top:0.5vw;
+    margin-left:0.5vw;
+    background-color:lightcoral;
+    
+    overflow:hidden;    
+
+}
+
+#p3{
+    font-weight: bold;
+    border:solid whitesmoke 2px;
+    padding:0.5vw;
+    margin:0.5vw;
+    width:65%;
+    height:55%;
+    
+    background-color:brown;
+    overflow:hidden;
+    
+}
+
+#p4{
+    font-weight: bold;
+    margin:auto;
+    background-color:darkgoldenrod;
+    text-align: center;
+    width: 80vw;
+    height: 7vh;
+    padding-top:1vh;
+    border:solid whitesmoke 2px;
+    margin-top:0.5vh ;
+    overflow:hidden;
+}

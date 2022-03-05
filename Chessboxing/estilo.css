@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Fredoka+One&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: darkseagreen;
+}
+fieldset{
+    background-color: gainsboro;
+    color:darkslategrey;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-family: Domine;
+}
+
+main > fieldset:first-child{
+    border-radius: 10px;
+    margin-bottom: 0.5vw;
+    text-align: center;
+    border:0;
+    margin-top:0.5vw;
+
+}
+
+p{
+    font-size:1vw;
+    text-align: justify;
+    margin-top:0.5vw;
+    line-height: 4.5vh;
+    
+}
+
+
+main>fieldset:first-child>p{
+    font-size:1vw;
+    text-align: justify;
+    margin:2vw;
+    line-height:normal;
+    
+}
+
+main > fieldset:last-child{
+    border-radius: 5px;
+    background-color: transparent;
+
+    
+   
+}
+
+main > fieldset:last-child p{
+    padding-left:7vw;
+    padding-right:7vw;
+    
+}
+img{
+    width: 50vw;
+    height: 30vw;
+    border: solid darkgreen 4px;
+}
+h1{
+    font-size:7vw;
+}
+h1, h2{
+    font-weight: bold;
+    font-family: Fredoka One;
+}
+
+div{
+    
+    background-color: whitesmoke;
+}
+h2{
+    margin-left:1vw;
+}
+
+
+fieldset>fieldset p::first-letter{
+    font-size: 2em;
+    color:#553409;
+}
+
+fieldset fieldset{
+    background-color: seagreen;
+    margin:0.5vw;
+    margin-top:2vh;
+    border:0;
+    font-weight: normal;
+    text-align: justify;
+  
+}
+fieldset>fieldset> p{
+    color:whitesmoke;
+    margin: 3vw;
+}
+
+ul{
+    font-size:1vw;
+    text-align: justify;
+    margin-left:10vw;
+    margin-right:10vw;
+    color:whitesmoke;
+    background-color: darkslategray;
+    border:solid grey 7px;
+    font-family: Domine;
+    
+    
+
+}
+ul:hover{
+    background-color: #164620 ;
+    border:solid yellowgreen 7px;
+    color:lightgreen;
+}
+li{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: 4vw;
+    font-style: italic;
+    text-align: justify;
+}
+fieldset fieldset:last-child{
+
+    margin-top:1vw;   
+}
+
+footer > p{
+    background-color: lightslategray;
+    border-top:solid whitesmoke 3px;
+    border-bottom:solid whitesmoke 3px;
+    color:black;
+    margin-top:1vh;
+    margin-bottom:1vh;
+    margin-left:5vw;
+    margin-right:5vw;
+    text-align: center;
+    height: 7vh;
+    font-weight: bold;
+}
+.Mystery{
+    color:#553409;
+
+}
+fieldset>p>a{
+
+    color:yellowgreen;
+    text-decoration: none;
+
+}
+footer a{
+    color:darkseagreen;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    font-size:1.2vw;
+    -webkit-text-stroke:1px #F58D7C ;
+    
+}
